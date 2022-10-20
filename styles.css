@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: hsl(257deg, 40%, 49%);
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+}
+@media only screen and (width < 450px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    flex-direction: column;
+    width: 370px;
+  }
+}
+
+.global {
+  margin-top: 64px;
+}
+@media only screen and (width < 450px) {
+  .global {
+    margin-top: 38px;
+  }
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 4rem;
+}
+@media only screen and (width < 450px) {
+  .logo {
+    width: 120px;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+main {
+  display: flex;
+}
+@media only screen and (width < 450px) {
+  main {
+    flex-direction: column;
+    width: 370px;
+    align-items: center;
+  }
+}
+
+.preview {
+  width: 696px;
+  height: 493px;
+}
+@media only screen and (width < 450px) {
+  .preview {
+    width: 296px;
+    height: 209px;
+  }
+}
+
+.text {
+  padding: 2rem 4rem;
+}
+@media only screen and (width < 450px) {
+  .text {
+    text-align: center;
+    padding: 2rem 2rem;
+    width: 304px;
+  }
+}
+.text h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+  width: 20ch;
+  line-height: 60px;
+}
+@media only screen and (width < 450px) {
+  .text h1 {
+    font-size: 24px;
+    width: 304px;
+    line-height: 36px;
+  }
+}
+.text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  width: 50ch;
+  line-height: 27px;
+}
+@media only screen and (width < 450px) {
+  .text p {
+    font-size: 16px;
+    width: 304px;
+  }
+}
+.text button {
+  width: 200px;
+  height: 56px;
+  background-color: white;
+  color: hsl(257deg, 40%, 49%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0px 20px 30px 0px rgba(60, 43, 105, 0.725);
+  cursor: pointer;
+}
+.text button:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
+}
+@media only screen and (width < 450px) {
+  .text button {
+    height: 40px;
+    font-size: 12px;
+    margin: 2rem;
+  }
+}
+
+.social {
+  display: flex;
+  position: relative;
+  left: 1200px;
+  gap: 36px;
+}
+.social a {
+  border-radius: 100%;
+  color: white;
+  outline: 2px solid white;
+  padding: 10px;
+  margin: -10px;
+}
+.social a .icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+@media only screen and (width < 450px) {
+  .social {
+    left: 0px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .social a {
+    outline: 1px solid white;
+    padding: 8px;
+    margin: -8px;
+  }
+  .social a .icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.social a:hover {
+  outline: 2px solid hsl(300deg, 69%, 71%);
+}
+.social a:hover .icon {
+  color: hsl(300deg, 69%, 71%);
+}
+
+/*# sourceMappingURL=styles.css.map */
